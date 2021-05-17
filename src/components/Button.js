@@ -1,7 +1,7 @@
-function Button({ text }) {
+function Button({ text, toggleNewTask }) {
     return (
         <div>
-            <button className='button'>{text}</button>
+            <button className='button' onClick={toggleNewTask}><strong>{text}</strong></button>
         </div>
     )
 }

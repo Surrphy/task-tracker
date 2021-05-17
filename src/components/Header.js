@@ -1,10 +1,10 @@
 import Button from './Button'
 
-function Header() {
+function Header({ toggleNewTask }) {
     return (
         <div className='header'>
             <h1>Your Tasks</h1>
-            <Button text='New Task' />
+            <Button text='New Task' toggleNewTask={toggleNewTask} />
         </div>
     )
 }

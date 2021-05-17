@@ -13,12 +13,13 @@ body {
 }
 
 .container {
-    min-width: 500px;
+    min-width: 30rem;
     min-height: 30rem;
     overflow: auto;
     border: 1px solid #457b9d;
     border-radius: 10px;
     margin: 20px;
+    position: relative;
 }
 
 .header {
@@ -32,9 +33,11 @@ body {
 }
 
 .task {
+    cursor: pointer;
     background: #8099bb;
     margin: 5px;
     padding: 10px 20px;
+    position: relative;
 }
 
 .task.important {
@@ -42,7 +45,50 @@ body {
 }
 
 .footer {
-    display: grid;
-    justify-content: center;
+    width: 15rem;
     margin: 20px;
+    position: absolute;
+    bottom: 1rem;
+    left: 7.5rem;
+}
+
+.button {
+    background-color: #8099bb;
+    border: 0;
+    padding: 0.5rem;
+}
+
+.button-block {
+    background-color: #8099bb;
+    border: 0;
+    padding: 0.5rem;
+}
+
+.form {
+    display: grid;
+    width: 15rem;
+    padding: 20px;
+    position: relative;
+    left: 9rem;
+}
+
+.form input {
+    max-width: 10rem;
+}
+
+.form-check {
+    margin: 10px;
+}
+
+.task-delete {
+    position: absolute;
+    right: 1rem;
+}
+
+.nomoretasks {
+    width: 10rem;
+    position: absolute;
+    left: 10rem;
+    padding-left: 2.5rem;
+    padding-top: 2rem;
 }
