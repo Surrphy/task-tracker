@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,22 +7,42 @@
   }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Staatliches';
     display: flex;
     justify-content: space-around;
 }
 
 .container {
-    max-width: 500px;
-    min-width: auto;
+    min-width: 500px;
     min-height: 30rem;
     overflow: auto;
-    border: 1px solid seagreen;
+    border: 1px solid #457b9d;
     border-radius: 10px;
+    margin: 20px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.tasks {
+    padding: 10px;
+}
+
+.task {
+    background: #8099bb;
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+.task.important {
+    border-left: 10px solid #457b9d;
+}
+
+.footer {
+    display: grid;
+    justify-content: center;
+    margin: 20px;
 }
